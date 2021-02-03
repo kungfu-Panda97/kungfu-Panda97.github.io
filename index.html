@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: #123456;
+            width: 100vw;
+            height: 100vh;
+        }
+        div{
+            position: absolute;
+            width: 200px;
+            height: 100px;
+            background: url("./img/xiong.png") no-repeat;
+            animation: move 1s steps(8) infinite,ad 3s forwards;
+        }
+        @keyframes move {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: -1600px 0;
+            }
+        }
+        @keyframes ad {
+            0% {
+                left: 0%;
+            }
+            100% {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
+
